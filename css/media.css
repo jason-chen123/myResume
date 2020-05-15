@@ -1,0 +1,292 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color:#d9d9d9;
+	height: 100%;
+	width: 100%;
+}
+.my-contain{
+	display: flex;
+	justify-content: space-around;
+	align-items:center
+	padding: 10px;
+	text-align: ;
+}
+.card{
+	width: 305px;
+    height: 438px;
+    color: palevioletred;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+	overflow: hidden;
+	transition: all 1s;
+		margin: 35px;
+}
+.card_active{
+	height: 100%;
+}
+.card .openBtn{
+	text-align: center;
+}
+
+.card .openBtn button{
+	width: 80px;
+	border-radius: 5px;
+	background: #00BFFF;
+	color: #fff;
+	outline: none;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+.card .img{
+	width: 100%;
+	height: 400px;
+}
+.open{
+	position: absolute;
+	left: 0;
+	top:50%;
+	z-index: 9999;
+	
+}
+.myPic{
+	height: 100%;
+	width: 100%;
+}
+.card .img img{
+	height: 100%;
+	width: 100%;
+	object-fit:;/*设置图片是否拉伸还是适应 */
+}
+.card p{
+	text-indent:2em;
+	
+}
+footer{
+	/*container的min-height：决定footer是否能被撑下去*/
+	height: 260px;
+	bottom: 0;
+	width: 100%;
+    /*position: fixed;*/
+	background-color: #111;
+	display: flex;
+	overflow: hidden;
+	/*left: -100%;*/
+	/*transform: translateX(100%);*/
+	/*opacity: 1;*/
+	transition: opacity .7s;
+		/*opacity: 0;*/
+}
+.footer_active{
+	/*transform: translateX(0);*/
+	opacity: 0;
+}
+.footer_disp{
+	transform: translateX(-100%);
+	opacity: 0;
+}
+
+.title{
+	margin:0 0 10px 0;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+footer .foot-left ul li{
+	float: left;
+	/*padding: 5px;*/
+	margin: 10px;
+	width: 30px;
+	height: 30px;	
+	background: #222;
+	text-align: center;
+	line-height: 30px;
+}
+footer .foot-left ul li:hover{
+	background: #336699;
+	transform:scale(1.2);
+}
+.contain{
+	font-size: 1.1rem;
+	padding:10px 0 10px 0;
+	transition: all 1s;
+}
+.contain:before{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	height: 2px;
+	width: 29%;
+	top:38px;
+	background: #d9d9d9;
+}
+.subcontent_m span{
+	padding:0 0 0 15px;
+}
+.subcontent_m div {
+	    padding: 0 0 20px 20px 
+}
+.subcontent_m div i{
+	background:#222 ;
+	padding: 5px;
+	font-size: 1.9rem;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	transition: all .7s;
+}
+.subcontent_m div i:hover{
+	background: #336699;
+/*	transform:scale(1.2);*/
+}
+footer .foot-left ul li i{
+	font-size: 1.2rem;
+	/*width: 20px;*/
+	/*background: #27A;*/
+}
+footer .foot-left ul{
+	overflow: hidden;
+	padding: 0 0 0 30px;
+	text-align: center;
+}
+.foot-right input,.foot-right textarea{
+	background: #151515;
+	border: 1px #ddddd;
+	outline: none;
+	color: #fff;
+	padding-left: 5;
+	transition: .5s;
+	font-size: 1.2rem;
+}
+.foot-right input:focus,.foot-right textarea:focus{
+	border:1px solid darkturquoise;
+	padding:5px 0 5px 0;
+}
+.foot-right p{
+	margin: 0;
+}
+/*.main-contain{
+	display: flex;
+}*/
+ul{
+	list-style: none;
+}
+a:visited{
+	color:blue
+}
+a{
+	text-decoration: none;
+}
+.box{
+	flex-basis: 50%;/*其实就是子项目的宽度 不一定要50 只要33就能三个排列一整行*/
+	padding: 10px 20px;
+}
+.changepage{
+	z-index: 9999;
+	top:0;
+	transition: .7s ease-in;
+}
+/*第二页*/
+.page_two{
+	position: absolute;
+}
+.resume{
+	height: 80%;
+	border: 10px solid deepskyblue;
+	text-align: center;
+	color: #151515;
+}
+.resume_wrap{
+	    width: 50%;
+	    left: 100%;
+    margin: auto;
+    position: absolute;
+        /*left: 20%;*/
+/*transform: translateX(150%);*/
+transition: .7s ;
+	/*display: flex;
+	justify-content: center;*/
+	/*z-index: 9999;*/
+}
+.resume_wrap_active{
+	transform: translateX(-150%);
+}
+.changepage_active{
+	transform: translateX(-200%);
+}
+.resume_wrap .resume_contain{
+	display: flex;
+	/*height: 1000px;*/
+}
+.resume_wrap .resume_left{
+	width: 30%;
+	border-right: #00BFFF 2px solid;
+	display: flex;
+	flex-direction: column;
+	
+}
+.resume_wrap .resume_right{
+	width:60%
+}
+.resume_wrap .my_text{
+	color: #000;
+	position: relative;
+}
+.resume_wrap .my_text ul{
+	padding: 0;
+	
+}
+.myself .my_text{
+	display: flex;
+	flex-direction: column;
+}
+.myself .my_text span{
+	padding: 5px 0;
+}
+.resume_wrap .my_text ul li{
+	padding:5px 0
+}
+.resume_wrap .resume h1:after{
+	    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #00BFFF;
+    left: 24%;
+    top:32px
+}
+.resume_wrap .resume_right{
+	display: flex;
+	flex-direction: column;
+}
+.resume_wrap .resume_right .float_left{
+	text-align: left;
+	padding-left: 15px;
+}
+.resume_wrap .resume_right .float_left:after{
+	content:"" ;
+	display:inline-block;
+	width: 80%;
+	background: #00BFFF;
+	height: 3px;
+}
+.container{
+	/*高度崩塌*/
+	min-height: 481px;
+	/*transform: translateX(10%);*/
+}
+.back{
+	width: 100px;
+	color: red;
+	font-size: 1.2rem;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 5px;
+	transition:  all .7s ;
+}
+.back:hover{
+	transform:scale(1.2rem);
+	background: #DB7093;
+	margin: 10px;
+}
